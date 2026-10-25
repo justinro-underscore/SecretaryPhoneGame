@@ -1721,11 +1721,11 @@ MonoBehaviour:
   callText: {fileID: 670382285}
   charsPerSecond: 30
   calls:
-  - transcript: Hi, this is Bob from accounting. Could you put me through to Linda?
-      It's about the quarterly report.
+  - transcript: Help!! My toilet broke and there is water everywhere! Oh God its
+      such a mess! Please send help! I really gotta go!!
     transferIcons: {fileID: 669861248}
-  - transcript: HELLO?! Is anyone there? I need the complaints department, and I
-      need it NOW.
+  - transcript: Hello. My dragon swallowed my keys and now I can't unlock it to go
+      to Wizards and Brews with the boys. Can you send someone to unlock my dragon?
     transferIcons: {fileID: 1961233377}
   successMessage: {fileID: 951819541}
 --- !u!4 &576880053
@@ -3988,7 +3988,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Your shift ends in 8 hours.
+  m_text: Your shift ends in 13 minutes.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0aef4ab3c9ced47bbace24e3b2f29aa8, type: 2}
   m_sharedMaterial: {fileID: -5148004430264780269, guid: 0aef4ab3c9ced47bbace24e3b2f29aa8, type: 2}
@@ -3997,8 +3997,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
