@@ -78,3 +78,7 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
 .vscode/
+
+# MacOs
+.DS_Store
+
