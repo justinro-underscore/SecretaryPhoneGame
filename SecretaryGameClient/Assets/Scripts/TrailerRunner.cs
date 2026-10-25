@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class TrailerRunner : MonoBehaviour
 {
-    enum Step { Idle, PlayingCall, AwaitingTransfer, Dialing, ShowingSuccess, Done }
+    enum Step { Idle, Ringing, TypingCall, AwaitingTransfer, Dialing, ShowingSuccess, Done }
 
     [Serializable]
     class Call
@@ -26,7 +26,6 @@ public class TrailerRunner : MonoBehaviour
     [SerializeField] Image ringingImage;
     [SerializeField] Sprite ringA;
     [SerializeField] Sprite ringB;
-    [SerializeField] float ringDuration = 5f;
     [SerializeField] float ringSwapInterval = 0.25f;
 
     [Header("Answered")]
@@ -45,6 +44,7 @@ public class TrailerRunner : MonoBehaviour
     Step step = Step.Idle;
     int callIndex;
     int iconsShown;
+    Coroutine ringRoutine;
 
     Call CurrentCall => calls[callIndex];
 
@@ -63,8 +63,16 @@ public class TrailerRunner : MonoBehaviour
         switch (step)
         {
             case Step.Idle:
-                step = Step.PlayingCall;
-                StartCoroutine(PlayCall());
+                callRinging.SetActive(true);
+                ringRoutine = StartCoroutine(Ring());
+                step = Step.Ringing;
+                break;
+
+            case Step.Ringing:
+                StopCoroutine(ringRoutine);
+                callRinging.SetActive(false);
+                step = Step.TypingCall;
+                StartCoroutine(TypeCall());
                 break;
 
             case Step.AwaitingTransfer:
@@ -103,7 +111,7 @@ public class TrailerRunner : MonoBehaviour
                 step = callIndex < calls.Length ? Step.Idle : Step.Done;
                 break;
 
-            // PlayingCall advances itself when the coroutine finishes; Done ignores clicks until reset
+            // TypingCall advances itself when the coroutine finishes; Done ignores clicks until reset
         }
     }
 
@@ -114,18 +122,19 @@ public class TrailerRunner : MonoBehaviour
         mainInactiveBackground.SetActive(!focused);
     }
 
-    IEnumerator PlayCall()
+    IEnumerator Ring()
     {
-        callRinging.SetActive(true);
         bool showA = true;
-        for (float elapsed = 0f; elapsed < ringDuration; elapsed += ringSwapInterval)
+        while (true)
         {
             ringingImage.sprite = showA ? ringA : ringB;
             showA = !showA;
             yield return new WaitForSeconds(ringSwapInterval);
         }
-        callRinging.SetActive(false);
+    }
 
+    IEnumerator TypeCall()
+    {
         callAnswered.SetActive(true);
         callText.text = CurrentCall.transcript;
         callText.maxVisibleCharacters = 0;
