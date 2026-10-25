@@ -1,18 +1,27 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TrailerRunner : MonoBehaviour
 {
-    [SerializeField] GameObject gameObject;
+    [SerializeField] GameObject mainActiveBackground;
+    [SerializeField] GameObject mainInactiveBackground;
+    [SerializeField] GameObject transferWindow;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    bool transferShown;
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetMouseButtonDown(1))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+
+        if (Input.GetMouseButtonDown(0) && !transferShown)
+        {
+            transferWindow.SetActive(true);
+            mainActiveBackground.SetActive(false);
+            mainInactiveBackground.SetActive(true);
+            transferShown = true;
+        }
     }
 }
