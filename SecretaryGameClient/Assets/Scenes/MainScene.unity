@@ -1778,6 +1778,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4634248181549030833, guid: d8cb2fae239674553aec012c910ebbd4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9e09c85e5c93c40e3b463985a3c21f25, type: 3}
     - target: {fileID: 7288559609105706451, guid: d8cb2fae239674553aec012c910ebbd4, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -4190,7 +4194,7 @@ PrefabInstance:
     - target: {fileID: 6164199656276139322, guid: 221a1700111114a7a8833951cc0d02c5, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 21300000, guid: 9e09c85e5c93c40e3b463985a3c21f25, type: 3}
     - target: {fileID: 7197697344340199684, guid: 221a1700111114a7a8833951cc0d02c5, type: 3}
       propertyPath: m_Name
       value: MenuBarItem
