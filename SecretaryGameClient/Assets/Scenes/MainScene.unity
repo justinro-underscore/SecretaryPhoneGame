@@ -799,7 +799,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1859424946315018286, guid: 858aef4573c7c4ec28719bf595234160, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 129.03
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1859424946315018286, guid: 858aef4573c7c4ec28719bf595234160, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -900,7 +900,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1859424946315018286, guid: 858aef4573c7c4ec28719bf595234160, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 82.02
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1859424946315018286, guid: 858aef4573c7c4ec28719bf595234160, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1721,11 +1721,11 @@ MonoBehaviour:
   callText: {fileID: 670382285}
   charsPerSecond: 30
   calls:
-  - transcript: Help!! My toilet broke and there is water everywhere! Oh God its
-      such a mess! Please send help! I really gotta go!!
+  - transcript: Help!! My toilet broke and there is water everywhere! Please send
+      help! I really gotta go!!
     transferIcons: {fileID: 669861248}
   - transcript: Hello. My dragon swallowed my keys and now I can't unlock it to go
-      to Wizards and Brews with the boys. Can you send someone to unlock my dragon?
+      get brews with the boys. Can you send someone to unlock my door?
     transferIcons: {fileID: 1961233377}
   successMessage: {fileID: 951819541}
 --- !u!4 &576880053
@@ -2518,7 +2518,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 71467138650893284, guid: d8cb2fae239674553aec012c910ebbd4, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 40.01
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 71467138650893284, guid: d8cb2fae239674553aec012c910ebbd4, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -2888,7 +2888,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 71467138650893284, guid: d8cb2fae239674553aec012c910ebbd4, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 33.01
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 71467138650893284, guid: d8cb2fae239674553aec012c910ebbd4, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -4362,7 +4362,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1859424946315018286, guid: 858aef4573c7c4ec28719bf595234160, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 122.03
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1859424946315018286, guid: 858aef4573c7c4ec28719bf595234160, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -4896,7 +4896,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1859424946315018286, guid: 858aef4573c7c4ec28719bf595234160, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 75.02
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1859424946315018286, guid: 858aef4573c7c4ec28719bf595234160, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -4959,7 +4959,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000038147, y: 19.214}
+  m_AnchoredPosition: {x: 0, y: 19.214005}
   m_SizeDelta: {x: 208.43, y: 208.4279}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1925451206
@@ -5420,7 +5420,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 71467138650893284, guid: d8cb2fae239674553aec012c910ebbd4, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 34.01
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 71467138650893284, guid: d8cb2fae239674553aec012c910ebbd4, type: 3}
       propertyPath: m_AnchoredPosition.y
