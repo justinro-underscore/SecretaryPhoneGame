@@ -1728,8 +1728,8 @@ MonoBehaviour:
   - transcript: Help!! My toilet broke and there is water everywhere! Please send
       help! I really gotta go!!
     transferIcons: {fileID: 669861248}
-  - transcript: Hello. My dragon swallowed my keys and now I can't unlock it to go
-      get brews with the boys. Can you send someone to unlock my door?
+  - transcript: Hi. My dragon swallowed my keys and now I can't unlock my tower to
+      go get brews with the boys. Can you send help?
     transferIcons: {fileID: 1961233377}
   successMessage: {fileID: 951819541}
 --- !u!4 &576880053
